@@ -3,6 +3,9 @@ import {Button, rem, Text} from '@mantine/core';
 import { bodyContentUseStyles } from './HelperFunctions/BodyContentStyle';
 
 
+/**
+ *  ToggleButtonProps
+ */
 interface ToggleButtonProps{
     title: string
 }

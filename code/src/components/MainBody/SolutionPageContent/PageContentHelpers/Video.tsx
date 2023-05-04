@@ -2,6 +2,10 @@ import React from 'react'
 import { Stack, createStyles, rem , Text, AspectRatio } from '@mantine/core';
 import { API_URL } from '@/constants/globals';
 
+/**
+ * Video component for the solution page
+ * @param url - the url of the video to be displayed
+ */
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -28,6 +32,7 @@ const useStyles = createStyles((theme) => ({
     // marginBottom: theme.spacing.xs,
     textAlign: 'left',
     fontFamily: `Montserrat, ${theme.fontFamily}`,
+    // media query for smaller than 'xs' screen sizes (fontSize, textAlign, width)
     [theme.fn.smallerThan('xs')]: {
       fontSize: rem(20),
       textAlign: 'left',
@@ -49,9 +54,11 @@ const useStyles = createStyles((theme) => ({
 
 const paragraph = "This part is reserved for the brief description of the solution above. Placeholder texts are used for now.  Lorem ipsum dolor sit amet consectetur. Urna placerat a amet.Lorem ipsum dolor sit amet consectetur. Urna placerat a amet.Lorem ipsum dolor sit amet consectetur. Urna placerat a amet."
 
-
+// Video component accepts a url prop (string) for the video source
 const Video = ({url}:{url: string}) => {
   const { classes } = useStyles()
+  // renders an AspectRatio component with the video element inside, wrapped in a Stack component with a backgroundColor
+  // based on the colorScheme
   return (
     <div>
       <Stack

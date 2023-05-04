@@ -6,9 +6,12 @@ import {
 import { IconChevronLeft} from '@tabler/icons-react';
 import { NextRouter } from 'next/router';
 
-
+/**
+ * Titles component 
+ */
 let img = ""
 const Titles = ({hasPrev, router, titleImg, title}:{hasPrev: boolean, router: NextRouter, titleImg: string, title: string}) => {
+  //displays the title passed as a prop and applies custom styles from useStyles
   img = titleImg
   const { classes} = useStyles();
   const ChevronIcon = IconChevronLeft;
@@ -17,12 +20,13 @@ const Titles = ({hasPrev, router, titleImg, title}:{hasPrev: boolean, router: Ne
     <div className={classes.wrapper}>
         {hasPrev ? (
         <ChevronIcon
+        // displays only if hasPrev is true, onClick route to the previous page
         className={classes.chevron}
         size="2.5rem"
         stroke={2.5}
         onClick={() => router.back()}
       />) : null}
-      
+      {/* Return a <div> that contains the ChevronIcon and the Title component */}
       <div className={classes.inner}>
         <Title className={classes.title}>
           {title}
