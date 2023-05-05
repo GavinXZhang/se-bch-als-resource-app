@@ -27,7 +27,7 @@ const Nav = () => {
         <Container className={classes.inner} fluid>
         {/* Contains a Group component with an Image component inside, which has properties like maw, mah, ml, mx, radius, src, and alt */}
           <Group>
-            <Image maw={100} mah={120} ml={32} mx="auto" radius="md" src="../Boston_Children's_Hospital_logo..png" alt="Random image" />
+            <Image maw={100} mah={120} width={120} height={60} ml={32} mx="auto" radius="md" src="../Boston_Children's_Hospital_logo..png" alt="Random image" />
           </Group>
           {/* Also contains a Burger component with properties like size and color, and opened set to false */}
           <Burger size="lg" color="#254885" opened={false} />

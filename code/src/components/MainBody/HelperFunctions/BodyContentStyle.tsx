@@ -17,9 +17,6 @@ export const bodyContentUseStyles = createStyles((theme) => ({
     alignContent: 'center',
     cursor: 'pointer',
 
-    '&:hover': {
-        backgroundColor: '#254885',  color: "#FFFFFF",
-    },
 
     [theme.fn.smallerThan('xs')]: {
       height: '57px',
@@ -29,6 +26,9 @@ export const bodyContentUseStyles = createStyles((theme) => ({
       justifyContent: 'center',
       alignItems: 'center',
       alignContent: 'center',
+      '&:hover': {
+        backgroundColor: '#254885',  color: "#FFFFFF",
+    },
     },
   },
 
@@ -61,8 +61,8 @@ export const bodyContentUseStyles = createStyles((theme) => ({
   },
 
   outer: {
-    // paddingTop: rem(24),
-    // pddingBottom: rem(24),
+    paddingTop: rem(26),
+    pddingBottom: '10%',
     
     paddingLeft: '10%',
     paddingRight: '10%',
