@@ -33,7 +33,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   const [currChoices, setCurrChoices] = useState<IChoice[]>([]);
 
   // currently clicked choice state
-  const [clickedChoice, setClickedChoice] = useState<IChoice>({ id: '1', title: 'Home' });
+  const [clickedChoice, setClickedChoice] = useState<IChoice>({ id: '1', title: 'BookMark Home' });
 
   // solution state
   const [solution, setSolution] = useState<ISolution>({ id: '', title: '' });
